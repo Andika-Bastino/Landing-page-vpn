@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +22,8 @@ body {
 header {
     width: 100%;
     background-color: #FFFF;
+    position: fixed;
+    z-index: 100;
 }
 
 header nav {
@@ -179,6 +182,7 @@ header nav {
     display: flex;
     align-items: end;
     gap: 169px;
+    /* scroll-margin-top: 150px; */
 }
 
 .wrapper-content-features {
@@ -286,7 +290,44 @@ header nav {
     color: white;
 }
 
-span {
+.wrapper-button-price span {
     font-weight: 400;
     color: #4F5665;
+}
+
+.global-network-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.global-network-section h1 {
+
+}
+
+.global-network-section img {
+    width: 1060px;
+    height: 537px;
+    /* untuk mengatur sesuai ukuran yg kalian buat */
+    object-fit: cover; 
+}
+
+.wrapper-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper-brand .reddit {
+    width: 156px;
+    height: 50px;
+}
+.wrapper-brand img {
+    width: 171px;
+    height: 51px;
+    margin-top: 0;
+    /* margin-bottom: 50px; */
 }
