@@ -311,10 +311,9 @@ header nav {
     margin-top: 150px;
 }
 
-.global-network-section h1 {
-    font-size: 35px;
-    font-weight: 500;
-    color: #0B132A;
+.global-network-section p {
+    font-size: 16px;
+    color: #4F5665;
 }
 
 .global-network-section img {
@@ -351,12 +350,21 @@ header nav {
     display: grid;
 }
 
+.testimonials-section p {
+    font-size: 16px;
+    color: #4F5665;
+}
+
 .wrapper-card-testimonials {
     width: 1330px;
     display: flex;
     align-items: center;
     gap: 50px;
     padding: 40px;
+}
+
+.wrapper-card-testimonials p {
+    color: #0B132A;
 }
 
 .card-testimonials {
@@ -376,7 +384,6 @@ header nav {
 .card-testimonials:hover {
     border: 2px solid #F53838;
     border-radius: 10px;
-    
 }
 
 .header-user-testimonials {
@@ -459,16 +466,17 @@ header nav {
     border-radius: 100%;
     border: 2px solid #F53838;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .wrapper-button button:active {
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    background-color: #f53838;
+    background-color: #DDE0E4;
 }
 
 .button-arrow-right img {
     transform: scaleX(-1);
-    background-color: transparent;
 }
+
