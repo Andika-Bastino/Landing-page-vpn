@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,6 +11,13 @@ body {
     background-color: #FBFBFB;
     width: 100%;
     height: 100vh;
+}
+
+main {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .container {
@@ -21,6 +29,8 @@ body {
 header {
     width: 100%;
     background-color: #FFFF;
+    position: fixed;
+    z-index: 100;
 }
 
 header nav {
@@ -179,6 +189,7 @@ header nav {
     display: flex;
     align-items: end;
     gap: 169px;
+    /* scroll-margin-top: 150px; */
 }
 
 .wrapper-content-features {
@@ -286,7 +297,186 @@ header nav {
     color: white;
 }
 
-span {
+.wrapper-button-price span {
     font-weight: 400;
     color: #4F5665;
 }
+
+.global-network-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.global-network-section p {
+    font-size: 16px;
+    color: #4F5665;
+}
+
+.global-network-section img {
+    width: 1060px;
+    height: 537px;
+    /* untuk mengatur sesuai ukuran yg kalian buat */
+    object-fit: cover; 
+    margin-top: 155px;
+    margin-bottom: 50px;
+}
+
+.wrapper-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper-brand .reddit {
+    width: 156px;
+    height: 50px;
+}
+.wrapper-brand img {
+    width: 171px;
+    height: 51px;
+    margin-top: 0;
+}
+
+/* section testimonials */
+.testimonials-section {
+    width: 100%;
+    text-align: center;
+    gap: 20px;
+    padding-top: 80px;
+    display: grid;
+}
+
+.testimonials-section p {
+    font-size: 16px;
+    color: #4F5665;
+}
+
+.wrapper-card-testimonials {
+    width: 1330px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+}
+
+.wrapper-card-testimonials p {
+    color: #0B132A;
+}
+
+.card-testimonials {
+    width: 400px;
+    height: 230px;
+    background-color: #FFFF;
+    border: 2px solid #DDDDDD;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: start;
+    /* kalo display flex berubah */
+    /* kalo display grid tidak berubah */
+    display: grid;
+    gap: 10px;
+}
+
+.card-testimonials:hover {
+    border: 2px solid #F53838;
+    border-radius: 10px;
+}
+
+.header-user-testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-user-testimonials span {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;
+}
+
+.wrapper-user-testimonials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.wrapper-user-testimonials img {
+    border-radius: 100%;
+}
+
+.wrapper-biodata-user {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wrapper-biodata-user .name-user {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.wrapper-biodata-user .address-user {
+    font-size: 14px;
+    color: #4F5665;
+}
+
+.wrapper-bottom-testimonials {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-bottom-testimonials .wrapper-dot {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.wrapper-dot .dot-active {
+    width: 40px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #F53855;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    background-color: #DDE0E4;
+}
+
+.wrapper-button {
+    display: flex;
+    margin-right: 200px;
+    align-items: center;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.wrapper-button button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid #F53838;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.wrapper-button button:active {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #DDE0E4;
+}
+
+.button-arrow-right img {
+    transform: scaleX(-1);
+}
+
