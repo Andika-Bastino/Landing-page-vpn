@@ -13,6 +13,13 @@ body {
     height: 100vh;
 }
 
+main {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .container {
     width: 100%;
     max-width: 1220px;
@@ -305,7 +312,9 @@ header nav {
 }
 
 .global-network-section h1 {
-
+    font-size: 35px;
+    font-weight: 500;
+    color: #0B132A;
 }
 
 .global-network-section img {
@@ -313,6 +322,8 @@ header nav {
     height: 537px;
     /* untuk mengatur sesuai ukuran yg kalian buat */
     object-fit: cover; 
+    margin-top: 155px;
+    margin-bottom: 50px;
 }
 
 .wrapper-brand {
@@ -329,5 +340,135 @@ header nav {
     width: 171px;
     height: 51px;
     margin-top: 0;
-    /* margin-bottom: 50px; */
+}
+
+/* section testimonials */
+.testimonials-section {
+    width: 100%;
+    text-align: center;
+    gap: 20px;
+    padding-top: 80px;
+    display: grid;
+}
+
+.wrapper-card-testimonials {
+    width: 1330px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+}
+
+.card-testimonials {
+    width: 400px;
+    height: 230px;
+    background-color: #FFFF;
+    border: 2px solid #DDDDDD;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: start;
+    /* kalo display flex berubah */
+    /* kalo display grid tidak berubah */
+    display: grid;
+    gap: 10px;
+}
+
+.card-testimonials:hover {
+    border: 2px solid #F53838;
+    border-radius: 10px;
+    
+}
+
+.header-user-testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-user-testimonials span {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;
+}
+
+.wrapper-user-testimonials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.wrapper-user-testimonials img {
+    border-radius: 100%;
+}
+
+.wrapper-biodata-user {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wrapper-biodata-user .name-user {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.wrapper-biodata-user .address-user {
+    font-size: 14px;
+    color: #4F5665;
+}
+
+.wrapper-bottom-testimonials {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-bottom-testimonials .wrapper-dot {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.wrapper-dot .dot-active {
+    width: 40px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #F53855;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    background-color: #DDE0E4;
+}
+
+.wrapper-button {
+    display: flex;
+    margin-right: 200px;
+    align-items: center;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.wrapper-button button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid #F53838;
+    background-color: transparent;
+}
+
+.wrapper-button button:active {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #f53838;
+}
+
+.button-arrow-right img {
+    transform: scaleX(-1);
+    background-color: transparent;
 }
